@@ -2,6 +2,7 @@
 # Esamatti Käkelä <ekakela@gmail.com> 
 # Tool for monitoring finnish postal service packages 
 # Replace "PATH" with the location of files
+# fileformat is packageID as filename, as a first row of the file and person whom should be notified as the second row.
 # This is run periodically by cron
 FILES=PATH/valvottavat-paketit/*
 A=$(ls -1 PATHs/valvottavat-paketit/|wc -l)
