@@ -11,7 +11,6 @@ TIMEOUT=25
 #Check sertificate expirary date
 edate="$(/usr/bin/timeout $TIMEOUT /usr/bin/openssl s_client -host $HOST -port $PORT -showcerts < /dev/null 2>/dev/null | sed -n '/BEGIN CERTIFICATE/,/END CERT/p' | openssl x509 -enddate -noout 2>/dev/null | sed -e 's/^.*\=//')"
 
-echo $edate
 #Format the date into seconds, compare to current time
 if [ -n "$edate" ]
 then
