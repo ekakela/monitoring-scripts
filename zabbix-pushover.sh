@@ -40,4 +40,4 @@ if [[ TO == "all" ]]; then
         $BINARY -T $TOKEN -U $USER -p $P -t "SUBJECT" "BODY"
 else
         $BINARY -d $TO -T $TOKEN -U $USER -p $P -t "SUBJECT" "BODY"
-
+fi
