@@ -4,6 +4,10 @@
   - alert script for zabbix that forwards colorized alerts to IRC via separate irssi session. 
   - Requires: socat and socket-interface.pl by [msparks](https://github.com/msparks/irssiscripts). 
 
+## zabbix-pushover.sh 
+  - alert script for zabbix that sends alerts via pushover.net service
+  - requires pushover.sh by [jnwatts] https://github.com/jnwatts/pushover.sh
+
 ## tools
 
 ### dyndns.sh 
